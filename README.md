@@ -1,10 +1,10 @@
 # Banco-Hospital-MySql
 ## MySql junto com Python
 
-![image](files/Users/jzhang/Desktop/Isolated.png)
+![Login](./contacts/static/img/Capture1.PNG)
 
 1. Adicionar Médico, atualizar e apagar dados(id, nome, email).
-![image](C:\Users\Pedro\Documents\GitHub\Banco-Hospital-MySql\img.1.png)
+![Medico](./img/1.png)
 2. Adicionar Telefone e atualizar dados. (id, numero, tipo: 'Comercial' 'Residencial' 'Celular').
 3. Adicionar Paciente, atualizar e apagar dados(nome, cpf, email, sexo).
 4. Adicionar Exame do paciente.
