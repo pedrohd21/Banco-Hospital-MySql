@@ -34,10 +34,10 @@ if __name__ == '__main__':
                     os.system("cls")
                     
                 if menu == 2:
+                    print('Atualizar Medico')
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
-                        print(lista)
                         id = int(input('CRM Médico: '))
                         for v in lista:
                             if id == v:
@@ -54,10 +54,10 @@ if __name__ == '__main__':
                 
                 
                 if menu == 3:
+                    print('Adicionar Telefone')
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
-                        print(lista)
                         id = int(input('CRM Médico: '))
                         for v in lista:
                             if id == v:
@@ -93,10 +93,10 @@ if __name__ == '__main__':
                         
                 
                 if menu == 4:
+                    print('Atualizar Telefone')
                     while True:
                         vdd = False
                         lista = medico.listTelefone('medico', 'idmedico', 'id_medico')
-                        print(lista)
                         id = int(input('Numero cadastro telefone: '))
                         for v in lista:
                             if id == v:
@@ -131,10 +131,10 @@ if __name__ == '__main__':
                 
 
                 if menu == 5:
+                    print('Apagar Medico')
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
-                        print(lista)
                     
                         id = int(input('CRM Medico: '))
                         for v in lista:
@@ -190,7 +190,6 @@ if __name__ == '__main__':
 
                 if menu == 2:
                     lista = paciente.listaPasciente()
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Paciente: '))
@@ -222,7 +221,6 @@ if __name__ == '__main__':
                 if menu == 3:
                     print('Exame')
                     lista = paciente.listaPasciente()
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Paciente: '))
@@ -242,7 +240,6 @@ if __name__ == '__main__':
                 if menu == 4:
                     print('Medicamento')
                     lista = paciente.listaPasciente()
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Paciente: '))
@@ -262,7 +259,6 @@ if __name__ == '__main__':
                 if menu == 5:
                     print('Atualizar Medicamento')
                     lista = paciente.listaMedicamento()
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Medicamento: '))
@@ -282,8 +278,6 @@ if __name__ == '__main__':
                 if menu == 6:
                     print('Endereco')
                     lista = paciente.listaPasciente()
-                    # rua, cidade, estado, bairro, id
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Paciente: '))
@@ -304,8 +298,6 @@ if __name__ == '__main__':
                 if menu == 7:
                     print('Atualizar Endereço')
                     lista = paciente.listaEndereco()
-                    # rua, cidade, estado, bairro, id
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Endereço: '))
@@ -326,8 +318,6 @@ if __name__ == '__main__':
                 if menu == 8:
                     print('Plano')
                     lista = paciente.listaPasciente()
-                    # tipo, id
-                    print(lista)
                     while True:
                         vdd = False
                         id = int(input('Numero Cadastro Paciente: '))
@@ -361,7 +351,6 @@ if __name__ == '__main__':
                     while True:
                         vdd = False
                         lista = paciente.listaPasciente()
-                        print(lista)
 
                         id = int(input('Numero cadastro Paciente: '))
                         for v in lista:
@@ -411,7 +400,6 @@ if __name__ == '__main__':
 
                 if opcao == '2':
                     lista = paciente.listaConsulta()
-                    print(lista)
                     while True:
                         id = int(input('Numero Consulta: '))
                         vdd = False
@@ -448,5 +436,5 @@ if __name__ == '__main__':
             print('Obrigado Por Usar!')
             break
 
-        # else:
-        #     print('Escolha uma opção valida.')
+        else:
+            print('Escolha uma opção valida.')
