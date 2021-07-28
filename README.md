@@ -5,7 +5,7 @@
 
 1. Adicionar Médico, atualizar e apagar dados(id, nome, email).
 
-![Medico](./img/1.PNG)
+![Medico](./img/1.PNG)<br>
 ![Medico](./img/2.PNG)
 
 2. Adicionar Telefone e atualizar dados. (id, numero, tipo: 'Comercial' 'Residencial' 'Celular').
