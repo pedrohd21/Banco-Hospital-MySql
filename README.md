@@ -4,7 +4,7 @@
 ![Login](./contacts/static/img/Capture1.PNG)
 
 1. Adicionar Médico, atualizar e apagar dados(id, nome, email).
-![Medico](./img/1.png)
+![Medico](./img/1.PNG)
 2. Adicionar Telefone e atualizar dados. (id, numero, tipo: 'Comercial' 'Residencial' 'Celular').
 3. Adicionar Paciente, atualizar e apagar dados(nome, cpf, email, sexo).
 4. Adicionar Exame do paciente.
