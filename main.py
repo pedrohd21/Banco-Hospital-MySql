@@ -35,6 +35,7 @@ if __name__ == '__main__':
                     
                 if menu == 2:
                     print('Atualizar Medico')
+                    print()
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
@@ -55,6 +56,7 @@ if __name__ == '__main__':
                 
                 if menu == 3:
                     print('Adicionar Telefone')
+                    print()
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
@@ -94,6 +96,7 @@ if __name__ == '__main__':
                 
                 if menu == 4:
                     print('Atualizar Telefone')
+                    print()
                     while True:
                         vdd = False
                         lista = medico.listTelefone('medico', 'idmedico', 'id_medico')
@@ -132,6 +135,7 @@ if __name__ == '__main__':
 
                 if menu == 5:
                     print('Apagar Medico')
+                    print()
                     while True:
                         vdd = False
                         lista = medico.listaMedico()
@@ -170,6 +174,7 @@ if __name__ == '__main__':
 
                 if menu == 1:
                     print('Adicionar Paciente')
+                    print()
                     nome = input('Nome: ')[0:30]
                     cpf = input('CPF: ')[0:15]
                     email = input('Email: ')[0:30]
@@ -189,6 +194,8 @@ if __name__ == '__main__':
                     os.system('cls')
 
                 if menu == 2:
+                    print('Atualizar Paciente')
+                    print()
                     lista = paciente.listaPasciente()
                     while True:
                         vdd = False
@@ -220,6 +227,7 @@ if __name__ == '__main__':
 
                 if menu == 3:
                     print('Exame')
+                    print()
                     lista = paciente.listaPasciente()
                     while True:
                         vdd = False
@@ -239,6 +247,7 @@ if __name__ == '__main__':
 
                 if menu == 4:
                     print('Medicamento')
+                    print()
                     lista = paciente.listaPasciente()
                     while True:
                         vdd = False
@@ -258,6 +267,7 @@ if __name__ == '__main__':
 
                 if menu == 5:
                     print('Atualizar Medicamento')
+                    print()
                     lista = paciente.listaMedicamento()
                     while True:
                         vdd = False
@@ -277,6 +287,7 @@ if __name__ == '__main__':
 
                 if menu == 6:
                     print('Endereco')
+                    print()
                     lista = paciente.listaPasciente()
                     while True:
                         vdd = False
@@ -297,6 +308,7 @@ if __name__ == '__main__':
 
                 if menu == 7:
                     print('Atualizar Endereço')
+                    print()
                     lista = paciente.listaEndereco()
                     while True:
                         vdd = False
@@ -317,6 +329,7 @@ if __name__ == '__main__':
 
                 if menu == 8:
                     print('Plano')
+                    print()
                     lista = paciente.listaPasciente()
                     while True:
                         vdd = False
@@ -348,6 +361,7 @@ if __name__ == '__main__':
 
                 if menu == 9:
                     print('Apagar Todos Dados.')
+                    print()
                     while True:
                         vdd = False
                         lista = paciente.listaPasciente()
@@ -370,6 +384,7 @@ if __name__ == '__main__':
         if opcao == 3:
             vdd = False
             print('Consulta')
+            print()
             while True:
                 opcao = input('(1) Consulta\n'
                       '(2) Atualizar Consulta \n'
@@ -399,6 +414,8 @@ if __name__ == '__main__':
                     break
 
                 if opcao == '2':
+                    print('Atualizar Pasciente')
+                    print()
                     lista = paciente.listaConsulta()
                     while True:
                         id = int(input('Numero Consulta: '))
