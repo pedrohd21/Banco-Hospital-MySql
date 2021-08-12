@@ -78,8 +78,6 @@ CREATE TABLE CONSULTA(
 	REFERENCES PACIENTE(IDPACIENTE)
 );
 
-drop table consulta;
-
 desc consulta;
 desc endereco;
 desc exame;
@@ -90,31 +88,11 @@ DESC PLANO;
 DESC TELEFONE_MEDICO;
 DESC TELEFONE_PASCIENTE;
 
-
-DELETE FROM medico
-WHERE crm = 1;
-
-select m.CRM, m.nome, t.CRM_ID, t.numero, t.IDTELEFONE, p.nome, p.IDPASCIENTE, p.CRM_ID
-from medico m
-	inner join TELEFONE_MEDICO t
-	on crm = t.CRM_ID
-	inner join PASCIENTE p 
-	on crm = p.CRM_ID;
-
-
-
 select * from medico;
 select * from consulta;
 select * from endereco;
 select * from exame;
 select * from medicamento;
-
 select * from plano;
 select * from TELEFONE;
 select * from paciente;
-
-
-select m.idmedicamento, m.nome
-from paciente p
-inner join medicamento m
-on p.idpaciente = m.id_paciente;
